@@ -2,20 +2,6 @@
 
 /* Base */
 
-.admin ul li{
-  list-style: none;
-  display: inline-block;
-}
-
-.admin ul{
-  background-image: linear-gradient(black, lightblue);
-  width: 100rem;
-}
-
-.admin ul li a{
-  color: rgba(255,244,252,0.8)
-}
-
 body {
   line-height: 1.7;
   color: #4d4d4d;

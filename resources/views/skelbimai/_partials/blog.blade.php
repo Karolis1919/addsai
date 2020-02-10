@@ -9,7 +9,7 @@
         <div class="row mb-3 align-items-stretch">
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="h-entry">
-                    <img src="images/img_1.jpg" alt="Image" class="img-fluid rounded">
+                    <img src="/public/images/img_1.jpg" alt="Image" class="img-fluid rounded">
                     <h2 class="font-size-regular"><a href="#" class="text-black">Many People Selling Online</a></h2>
                     <div class="meta mb-3">by Mark Spiker<span class="mx-1">&bullet;</span> Jan 18, 2019 <span class="mx-1">&bullet;</span> <a href="#">News</a></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
@@ -17,7 +17,7 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="h-entry">
-                    <img src="images/img_2.jpg" alt="Image" class="img-fluid rounded">
+                    <img src="/public/images/img_2.jpg" alt="Image" class="img-fluid rounded">
                     <h2 class="font-size-regular"><a href="#" class="text-black">Many People Selling Online</a></h2>
                     <div class="meta mb-3">by Mark Spiker<span class="mx-1">&bullet;</span> Jan 18, 2019 <span class="mx-1">&bullet;</span> <a href="#">News</a></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
@@ -25,7 +25,7 @@
             </div>
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
                 <div class="h-entry">
-                    <img src="images/img_3.jpg" alt="Image" class="img-fluid rounded">
+                    <img src="/public/images/img_3.jpg" alt="Image" class="img-fluid rounded">
                     <h2 class="font-size-regular"><a href="#" class="text-black">Many People Selling Online</a></h2>
                     <div class="meta mb-3">by Mark Spiker<span class="mx-1">&bullet;</span> Jan 18, 2019 <span class="mx-1">&bullet;</span> <a href="#">News</a></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
