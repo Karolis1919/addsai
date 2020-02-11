@@ -65,7 +65,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="img">Nuotrauka</label>
-                                        <input type="file" class="form-control-file" name="image">
+                                        <input type="file" class="form-control-file" name="img">
                                     </div>
                                     <div class="form-group">
                                         <label for="info">Aprašymas</label>

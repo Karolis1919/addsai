@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Ad;
+use App\Category;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index(){
-        return view('skelbimai.pages.home');
+        $categories=Category::all();
+        $ads = Ad::select('*','ads.id as adsid')->join('categories', 'cat_id', '=', 'categories.id')->get();
+        return view('skelbimai.pages.home', compact('ads', 'categories'));
         //***PAGES***
         //$posts=Post::paginate(8);
         //return view('pages.home', compact(['posts']));
@@ -22,11 +26,13 @@ class HomeController extends Controller
     }
 
     public function showads(){
-        return view('skelbimai.pages.allads');
+        $ads = Ad::select('*','ads.id as adsid')->join('categories', 'cat_id', '=', 'categories.id')->paginate(8);
+        return view('skelbimai.pages.allads', compact('ads'));
     }
 
     public function showad(){
-        return view('skelbimai.pages.ad');
+        $ads = Ad::select('*','ads.id as adsid')->join('categories', 'cat_id', '=', 'categories.id')->get();
+        return view('skelbimai.pages.ad', compact('ads'));
     }
 
     public function showinfo(){
@@ -47,6 +53,15 @@ class HomeController extends Controller
 
     public function showcatlist(){
         return view('skelbimai.pages.catlist');
+    }
+
+    public function oneAd(Ad $ad){
+        $ads = Ad::select('*','ads.id as adsid')->join('categories', 'cat_id', '=', 'categories.id')->get();
+        return view('skelbimai.pages.ad', ['ad'=>$ad], compact('ads'));
+    }
+
+    public function showeditad(){
+        return view('skelbimai.pages.editad');
     }
 
     //public function showeditad(){

@@ -28,7 +28,7 @@ class AdController extends Controller
             'cat_id' => 'required'
         ]);
         $ads = Ad::create([
-            'title' => request('name'),
+            'name' => request('title'),
             'cost' => request('cost'),
             'info' => request('info'),
             'email' => request('email'),
@@ -38,4 +38,5 @@ class AdController extends Controller
         ]);
         return redirect ('/');
     }
+
 }

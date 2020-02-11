@@ -8,16 +8,17 @@
             </div>
         </div>
         <div class="row">
+            @foreach($ads as $ad)
             <div class="col-12  block-13">
                 <div class="owl-carousel nonloop-block-13">
 
                     <div class="d-block d-md-flex listing vertical">
                         <a href="/ad" class="img d-block" style="background-image: url('images/img_1.jpg')"></a>
                         <div class="lh-content">
-                            <span class="category">Cars &amp; Vehicles</span>
+                            <span class="category">{{$ad->title}}</span>
                             <a href="#" class="bookmark"><span class="icon-heart"></span></a>
-                            <h3><a href="/ad">New Black Car</a></h3>
-                            <address>Don St, Brooklyn, New York</address>
+                            <h3><a href="/ad">{{$ad->name}}</a></h3>
+                            <address>{{$ad->location}}</address>
                             <p class="mb-0">
                                 <span class="icon-star text-warning"></span>
                                 <span class="icon-star text-warning"></span>
@@ -28,137 +29,10 @@
                             </p>
                         </div>
                     </div>
-
-                    <div class="d-block d-md-flex listing vertical">
-                        <a href="/ad" class="img d-block" style="background-image: url('images/img_2.jpg')"></a>
-                        <div class="lh-content">
-                            <span class="category">Real Estate</span>
-                            <a href="#" class="bookmark"><span class="icon-heart"></span></a>
-                            <h3><a href="/ad">Own New House</a></h3>
-                            <address>Don St, Brooklyn, New York</address>
-                            <p class="mb-0">
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-secondary"></span>
-                                <span class="review">(3 Reviews)</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-block d-md-flex listing vertical">
-                        <a href="/ad" class="img d-block" style="background-image: url('images/img_3.jpg')"></a>
-                        <div class="lh-content">
-                            <span class="category">Furniture</span>
-                            <a href="#" class="bookmark"><span class="icon-heart"></span></a>
-                            <h3><a href="/ad">Wooden Chair &amp; Table</a></h3>
-                            <address>Don St, Brooklyn, New York</address>
-                            <p class="mb-0">
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-secondary"></span>
-                                <span class="review">(3 Reviews)</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-block d-md-flex listing vertical">
-                        <a href="/ad" class="img d-block" style="background-image: url('images/img_4.jpg')"></a>
-                        <div class="lh-content">
-                            <span class="category">Electronics</span>
-                            <a href="#" class="bookmark"><span class="icon-heart"></span></a>
-                            <h3><a href="/ad">iPhone X gray</a></h3>
-                            <address>Don St, Brooklyn, New York</address>
-                            <p class="mb-0">
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-secondary"></span>
-                                <span class="review">(3 Reviews)</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-block d-md-flex listing vertical">
-                        <a href="/ad" class="img d-block" style="background-image: url('images/img_1.jpg')"></a>
-                        <div class="lh-content">
-                            <span class="category">Cars &amp; Vehicles</span>
-                            <a href="#" class="bookmark"><span class="icon-heart"></span></a>
-                            <h3><a href="/ad">New Black Car</a></h3>
-                            <address>Don St, Brooklyn, New York</address>
-                            <p class="mb-0">
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-secondary"></span>
-                                <span class="review">(3 Reviews)</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-block d-md-flex listing vertical">
-                        <a href="/ad" class="img d-block" style="background-image: url('images/img_2.jpg')"></a>
-                        <div class="lh-content">
-                            <span class="category">Real Estate</span>
-                            <a href="#" class="bookmark"><span class="icon-heart"></span></a>
-                            <h3><a href="/ad">Own New House</a></h3>
-                            <address>Don St, Brooklyn, New York</address>
-                            <p class="mb-0">
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-secondary"></span>
-                                <span class="review">(3 Reviews)</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-block d-md-flex listing vertical">
-                        <a href="/ad" class="img d-block" style="background-image: url('images/img_3.jpg')"></a>
-                        <div class="lh-content">
-                            <span class="category">Furniture</span>
-                            <a href="#" class="bookmark"><span class="icon-heart"></span></a>
-                            <h3><a href="/ad">Wooden Chair &amp; Table</a></h3>
-                            <address>Don St, Brooklyn, New York</address>
-                            <p class="mb-0">
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-secondary"></span>
-                                <span class="review">(3 Reviews)</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-block d-md-flex listing vertical">
-                        <a href="/ad" class="img d-block" style="background-image: url('images/img_4.jpg')"></a>
-                        <div class="lh-content">
-                            <span class="category">Electronics</span>
-                            <a href="#" class="bookmark"><span class="icon-heart"></span></a>
-                            <h3><a href="/ad">iPhone X gray</a></h3>
-                            <address>Don St, Brooklyn, New York</address>
-                            <p class="mb-0">
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-warning"></span>
-                                <span class="icon-star text-secondary"></span>
-                                <span class="review">(3 Reviews)</span>
-                            </p>
-                        </div>
-                    </div>
-
                 </div>
+                @endforeach
             </div>
-
-
+        </div>
         </div>
     </div>
 </div>

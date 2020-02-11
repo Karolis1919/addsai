@@ -28,4 +28,5 @@ route::get('/delete/category/{category}', 'CategoryController@deleteCategory');
 route::get('/category', 'AdController@createAd');
 route::get('/form', 'AdController@showform');
 route::post('/insert', 'AdController@storeAd');
-//route::get('/editad', 'AdController@showeditad');
+route::get('/ad{ad}', 'HomeController@oneAd');
+route::get('/editad', 'AdController@showeditad');
