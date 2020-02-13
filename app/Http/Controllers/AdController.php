@@ -39,4 +39,18 @@ class AdController extends Controller
         return redirect ('/');
     }
 
+    public function showeditad(){
+        $ads = Ad::all();
+        return view('skelbimai.pages.editad', compact('ads'));
+    }
+
+    public function deleteAd(Ad $ad){
+        $ad->delete();
+        return redirect('/editad');
+    }
+
+    public function updateAd(){
+
+    }
+
 }

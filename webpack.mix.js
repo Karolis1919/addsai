@@ -25,18 +25,21 @@ mix.combine([
     'public/css/vendor/aos.css'
 ], 'public/css/vendor.css');
 mix.combine([
+    'public/js/aos.js',
+    'public/js/app.js',
+    'public/js/bootstrap.min.js',
+    'public/js/bootstrap-datepicker.min.js',
+    'public/js/jquery.countdown.min.js',
+    'public/js/jquery.magnific-popup.min.js',
+    'public/js/jquery.stellar.min.js',
     'public/js/jquery-3.3.1.min.js',
     'public/js/jquery-migrate-3.0.1.js',
     'public/js/jquery-ui.js',
-    'public/js/jquery.stellar.min.js',
-    'public/js/jquery.countdown.min.js',
-    'public/js/jquery.magnific-popup.min.js',
-    'public/js/popper.min.js',
-    'public/js/bootstrap.min.js',
+    'public/js/main.js',
+    'public/js/mediaelement-and-player.min.js',
     'public/js/owl.carousel.min.js',
-    'public/js/bootstrap-datepicker.min.js',
-    'public/js/aos.js',
+    'public/js/popper.min.js',
     'public/js/rangeslider.min.js',
-    'public/js/main.js'
-], 'public/js/app.js');
+    'public/js/slick.min.js'
+], 'public/js/typed.js');
 mix.browserSync('skelbimai.test');

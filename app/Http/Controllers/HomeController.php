@@ -63,8 +63,4 @@ class HomeController extends Controller
     public function showeditad(){
         return view('skelbimai.pages.editad');
     }
-
-    //public function showeditad(){
-    //    return view('skelbimai.pages.editad');
-    //}
 }

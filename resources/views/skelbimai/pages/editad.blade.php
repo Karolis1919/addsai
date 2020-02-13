@@ -59,6 +59,7 @@
                                         <td>{{$ad->email}}</td>
                                         <td>{{$ad->phone}}</td>
                                         <td>{{$ad->location}}</td>
+                                        <td><a href="/delete/ad/{{$ad->id}}">Redaguoti</a></td>
                                         <td><a href="/delete/ad/{{$ad->id}}">Šalinti</a></td>
                                     </tr>
                                 @endforeach

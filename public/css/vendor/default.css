@@ -1,0 +1,16 @@
+.overlay [data-aos^=fade][data-aos^=fade] {
+    opacity: 1;
+}
+
+.admin ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.admin ul{
+    text-align: center;
+}
+
+.admin{
+    background-color: #000000;
+}
