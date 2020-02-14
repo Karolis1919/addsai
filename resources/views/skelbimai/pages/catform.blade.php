@@ -22,7 +22,7 @@
 
                         <div class="row justify-content-center mt-5">
                             <div class="col-md-8 text-center">
-                                <h1>Form</h1>
+                                <h1>Skelbimo pridejimas</h1>
                             </div>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                 <div class="row">
                     <div class="col-lg-12">
 
-                        <div class="mb-4" style="margin-top: -150px;">
+                        <div class="mb-4">
                             @if ($errors->any())
                                 <div class="alert alert-danger">
                                     <ul>

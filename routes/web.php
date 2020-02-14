@@ -31,3 +31,14 @@ route::get('/form', 'AdController@showform');
 route::post('/insert', 'AdController@storeAd');
 route::get('/ad{ad}', 'HomeController@oneAd');
 route::get('/editad', 'AdController@showeditad');
+route::post('/updatead{ad}', 'AdController@updateAd');
+route::get('/catform{ad}', 'AdController@form');
+route::get('/comment{comment}', 'CommentsController@addComment');
+Auth::routes();
+
+Route::get('/editad', 'AdController@showeditad')->name('home');
+route::get('/logout', function(){
+    Auth::logout();
+    return Redirect::to('login');
+});
+

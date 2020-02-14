@@ -13,7 +13,7 @@
                 <div class="owl-carousel nonloop-block-13">
 
                     <div class="d-block d-md-flex listing vertical">
-                        <a href="/ad" class="img d-block" style="background-image: url('images/img_1.jpg')"></a>
+                        <a href="/ad" class="img d-block" style="background-image: url('/images/img_1.jpg')"></a>
                         <div class="lh-content">
                             <span class="category">{{$ad->title}}</span>
                             <a href="#" class="bookmark"><span class="icon-heart"></span></a>

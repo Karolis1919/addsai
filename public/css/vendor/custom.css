@@ -1,0 +1,15 @@
+[data-aos^=fade][data-aos^=fade]{
+    opacity:1;
+}
+
+.admin ul li{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.admin {
+    color: rgba(255,250,252,0.8);
+    background-color: rgba(0,0,0,0.8);
+}
+

@@ -29,12 +29,13 @@
                 </div>
             </div>
         </div>
+    </div>
 
         <div class="site-section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="mb-4" style="margin-top: -150px;">
+                        <div class="mb-4">
                             <table class="table">
                                 <a href="/form"><button type="submit" class="btn btn-primary">Naujas skelbimas</button></a>
                                 <thead>
@@ -59,7 +60,7 @@
                                         <td>{{$ad->email}}</td>
                                         <td>{{$ad->phone}}</td>
                                         <td>{{$ad->location}}</td>
-                                        <td><a href="/delete/ad/{{$ad->id}}">Redaguoti</a></td>
+                                        <td><a href="/catform{{$ad->id}}">Redaguoti</a></td>
                                         <td><a href="/delete/ad/{{$ad->id}}">Šalinti</a></td>
                                     </tr>
                                 @endforeach

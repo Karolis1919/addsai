@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col-lg-12">
 
-                        <div class="mb-4" style="margin-top: -150px;">
+                        <div class="mb-4">
                             <div class="slide-one-item home-slider owl-carousel">
                                 <div><img src="/public/images/img_2.jpg" alt="Image" class="img-fluid rounded"></div>
                                 <div><img src="/public/images/img_3.jpg" alt="Image" class="img-fluid rounded"></div>
@@ -52,6 +52,15 @@
                         <p>{{$ad->phone}}</p>
                         <p>{{$ad->location}}</p>
                     </div>
+                </div>
+                <div class="comments">
+                    <h4>Komentarai</h4>
+
+                    <ul class="list-group">
+                        @foreach($ad->comments as $comment)
+                        <li class="list-group-item"><strong>{{$comment->created_at}}</strong></li>
+                            @endforeach
+                    </ul>
                 </div>
             </div>
         </div>

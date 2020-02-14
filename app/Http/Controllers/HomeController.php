@@ -1,13 +1,23 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Ad;
 use App\Category;
+
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+
+    public function __construct(){
+        $this->middleware('auth', ['only' =>['edit']]);
+    }
+
     public function index(){
         $categories=Category::all();
         $ads = Ad::select('*','ads.id as adsid')->join('categories', 'cat_id', '=', 'categories.id')->get();
@@ -20,9 +30,6 @@ class HomeController extends Controller
     public function showProfile(){
         return view('skelbimai.pages.profile');
 
-        //dd($darbuotojai);
-
-        //return redirect('http://autogidas.lt');
     }
 
     public function showads(){
@@ -63,4 +70,9 @@ class HomeController extends Controller
     public function showeditad(){
         return view('skelbimai.pages.editad');
     }
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
 }

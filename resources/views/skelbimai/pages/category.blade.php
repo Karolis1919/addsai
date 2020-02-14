@@ -13,7 +13,7 @@
             </div>
             <div class="site-mobile-menu-body"></div>
         </div>
-        <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url(/public/images/hero_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url(/images/hero_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="row align-items-center justify-content-center text-center">
 
@@ -32,7 +32,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="mb-4" style="margin-top: -150px;">
+                        <div class="mb-4">
                             @if ($errors->any())
                                 <div class="alert alert-danger">
                                     <ul>

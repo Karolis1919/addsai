@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ mix ('/css/bootstrap/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ mix ('/css/vendor.css') }}">
     <link rel="stylesheet" href="{{ mix ('/css/style.css') }}">
-    <link rel="stylesheet" href="css/vendor/default.css">
+    <link rel="stylesheet" href="css/vendor/custom.css">
 
 
 </head>
